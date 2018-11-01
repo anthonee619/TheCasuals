@@ -14,13 +14,15 @@ body {
 .title {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 10vh;
   font-size: 3.5vw;
   padding: 3vh 2vw;
   border-bottom: 1px solid #372549;
   align-items: center;
+  background-color: #7dd181;
 }
 
-.title h1 {
+.title img {
   grid-column: 4 / span 4;
   grid-row: 1;
 }
@@ -41,58 +43,35 @@ body {
 
 .navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 8fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 80vw;
+  margin: 0 auto;
+  background-color: #bfd7b5;
 }
 
 .navigation h4 {
-  margin: 0 auto;
-  padding: 1vh 8vw;
+  text-align: center;
+  width: 100%;
   border-bottom: 1px solid #372549;
   border-right: 1px solid #372549;
+}
+
+#active {
+  background-color: #4cb963;
+}
+
+.navigation h4:nth-child(1) {
+  border-left: 1px solid #372549;
+
 }
 
 .main {
   width: 80vw;
   margin: 0 auto;
   padding-top: 10vh;
+  grid-template-columns:
 }
 
 .venture {
-  display: grid;
-  grid-template-columns: 8vw 30vw;
-  grid-template-rows: 4vw 4vw;
-  font-size: 2vw;
-  grid-column-gap: 1vw;
-}
 
-.venture * {
-  margin: 0 auto;
-}
-
-.venture img {
-  width: 8vw;
-  grid-column: 1;
-  grid-row: 1 / span 2;
-}
-
-
-#name {
-  grid-column: 2;
-  grid-row: 1;
-  background-color: #4cb963;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  border-radius: 0.5em;
-
-}
-
-#upgrade {
-  grid-column: 2;
-  grid-row: 2;
-  background-color: #eacdc2;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  border-radius: 0.5em;
 }
