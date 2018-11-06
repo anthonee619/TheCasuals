@@ -9,6 +9,11 @@ body {
   padding: 0;
   background-color: #efefefef;
   color: #372549;
+  background: url("../img/background.svg");
+}
+
+svg {
+  color: #efefef;
 }
 
 .title {
@@ -45,6 +50,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   width: 80vw;
+  height: 4vh;
   margin: 0 auto;
   background-color: #bfd7b5;
 }
@@ -54,6 +60,7 @@ body {
   width: 100%;
   border-bottom: 1px solid #372549;
   border-right: 1px solid #372549;
+  cursor: pointer;
 }
 
 #active {
@@ -67,11 +74,46 @@ body {
 
 .main {
   width: 80vw;
+  height: 72vh;
   margin: 0 auto;
   padding-top: 10vh;
-  grid-template-columns:
+  /* grid-template-columns: */
+  background-color: #efefef;
 }
 
 .venture {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0 2vw;
+}
 
+.venture h1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  font-size: 5vw;
+}
+
+.venture h2 {
+  grid-column: 1;
+  grid-row: 2;
+  font-size: 3.5vw;
+}
+
+.venture p {
+  grid-column: 1;
+}
+
+.venture p:nth-child(2) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.venture h3 {
+  grid-column: 2;
+  grid-row: 2;
+  padding: 1vh 2vw;
+  text-align: center;
+  background-color: #151313;
+  color: #efefef;
+  border-radius: 1vw;
 }
