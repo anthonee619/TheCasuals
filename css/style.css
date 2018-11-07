@@ -4,7 +4,7 @@ body * {
 }
 
 body {
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Montserrat', "Lato";
   margin: 0;
   padding: 0;
   background-color: #efefefef;
@@ -28,7 +28,7 @@ svg {
 }
 
 .title img {
-  grid-column: 4 / span 4;
+  grid-column: 5 / span 4;
   grid-row: 1;
 }
 
