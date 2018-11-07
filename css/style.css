@@ -9,7 +9,7 @@ body {
   padding: 0;
   background-color: #efefefef;
   color: #372549;
-  background: url("../img/background.svg");
+  background: url("../img/homepattern.svg");
 }
 
 svg {
@@ -30,6 +30,7 @@ svg {
 .title img {
   grid-column: 5 / span 4;
   grid-row: 1;
+  width: 100%;
 }
 
 .title h3 {
