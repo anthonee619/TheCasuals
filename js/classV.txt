@@ -1,0 +1,42 @@
+
+class Venture extends Industry {
+    constructor(name) {
+        //this.name = name;
+        super(name);
+        this.cost = 10;
+        this.na = "Alice's Amazing Yeast Shop";
+        this.pps = 10;
+        this.upgradeCost = 10;
+        this.ppsUpgradeScale = 1.5;
+        this.upgradeCostScale = 2.3;
+        this.level = 1;
+    }
+    
+    upgrade(){
+        // Functon takes care of all the calculations
+        // including recalculating PPS and Upgradecost
+        
+    }
+
+    getPPS(){
+        return this.pps;
+    }
+
+    getLevel(){
+        return this.level;
+    }
+    getName(){
+        return this.na;
+    }
+
+    // ---- Functions for testing ----------
+    incCost(amount){
+        this.cost += amount;
+    }
+    showCost(){
+        console.log(this.cost);
+    }
+    sayHello(){
+        this.sayHi();
+    }
+}
