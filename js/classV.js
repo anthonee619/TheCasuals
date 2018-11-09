@@ -28,17 +28,6 @@ class Venture extends Industry {
     getName(){
         return this.na;
     }
-
-    // ---- Functions for testing ----------
-    incCost(amount){
-        this.cost += amount;
-    }
-    showCost(){
-        console.log(this.cost);
-    }
-    sayHello(){
-        this.sayHi();
-    }
 }
 
 // Agriculture venture 1
@@ -262,8 +251,6 @@ class Producer extends Industry {
         this.pps = Math.ceil(this.pps * this.ppsUpgradeScale);
         funds = funds - this.upgradeCost;
         this.upgradeCost = Math.ceil(this.upgradeCost * this.upgradeCostScale);
-        //document.getElementById("venture2").innerHTML = "PROFIT/S: $" +venture2pps;
-        //document.getElementById("venture2up").innerHTML = "UPGRADE: $" + venture2UpgradeCost;
         return 1;
     }
     return 0;
@@ -311,8 +298,6 @@ class Sports extends Industry {
         this.pps = Math.ceil(this.pps * this.ppsUpgradeScale);
         funds = funds - this.upgradeCost;
         this.upgradeCost = Math.ceil(this.upgradeCost * this.upgradeCostScale);
-        //document.getElementById("venture2").innerHTML = "PROFIT/S: $" +venture2pps;
-        //document.getElementById("venture2up").innerHTML = "UPGRADE: $" + venture2UpgradeCost;
         return 1;
     }
     return 0;
@@ -360,8 +345,6 @@ class Branding extends Industry {
         this.pps = Math.ceil(this.pps * this.ppsUpgradeScale);
         funds = funds - this.upgradeCost;
         this.upgradeCost = Math.ceil(this.upgradeCost * this.upgradeCostScale);
-        //document.getElementById("venture2").innerHTML = "PROFIT/S: $" +venture2pps;
-        //document.getElementById("venture2up").innerHTML = "UPGRADE: $" + venture2UpgradeCost;
         return 1;
     }
     return 0;
@@ -408,8 +391,6 @@ class Fame extends Industry {
         this.pps = Math.ceil(this.pps * this.ppsUpgradeScale);
         funds = funds - this.upgradeCost;
         this.upgradeCost = Math.ceil(this.upgradeCost * this.upgradeCostScale);
-        //document.getElementById("venture2").innerHTML = "PROFIT/S: $" +venture2pps;
-        //document.getElementById("venture2up").innerHTML = "UPGRADE: $" + venture2UpgradeCost;
         return 1;
     }
     return 0;
@@ -458,8 +439,6 @@ class Franchise extends Industry {
             this.pps = Math.ceil(this.pps * this.ppsUpgradeScale);
             funds = funds - this.upgradeCost;
             this.upgradeCost = Math.ceil(this.upgradeCost * this.upgradeCostScale);
-            //document.getElementById("venture2").innerHTML = "PROFIT/S: $" +venture2pps;
-            //document.getElementById("venture2up").innerHTML = "UPGRADE: $" + venture2UpgradeCost;
             return 1;
         }
         return 0;
