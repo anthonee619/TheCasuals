@@ -5,7 +5,7 @@ funds = 0;
 var portfolio = [];
 // ---------------------------------
 // ------ For testing new interface ---
-// Start off with two ventures for now 
+// Start off with two ventures for now
 // to demo the interface and make sure everything
 // is working right
 
@@ -47,6 +47,9 @@ function slot5(){
 
 }
 // ------------------------------------
+// function
+$("#cp").text(portfolio[0].getPPS());
+$("#upgrade").text(portfolio[0].getInfo()[3]);
 
 
 function calculateFunds(){
@@ -54,17 +57,17 @@ function calculateFunds(){
         funds = funds + Math.ceil((portfolio[i].getPPS())*0.10);
     }
     // This is where it would update the value of funds
-    //console.log(funds);
+    $("#funds").text(funds)
 }
 
 // Currently set a 100 ms interval for smooth updating
 // funds are still being calculated at 1 second intervals
 // this is why the funds are being multiplied by 0.10
-setInterval(calculateFunds, 100); 
+setInterval(calculateFunds, 100);
 
-// Current venture classes are: 
-// FoodService, Farmer, FoodCompany, Professional, Producer, Sports, 
-// Branding, Fame, Franchise, 
+// Current venture classes are:
+// FoodService, Farmer, FoodCompany, Professional, Producer, Sports,
+// Branding, Fame, Franchise,
 /*
     The relevant class methods are upgrade() and getInfo():
      - upgrade(): upgrades the venture if there is enough money available
@@ -72,7 +75,7 @@ setInterval(calculateFunds, 100);
      - getInfo(): returns a string array with name, pps, current level, and upgrade cost
         in that order.
 */
-// Needs to be imported like this: 
+// Needs to be imported like this:
 /*
       <script src="classI.js"></script>
       <script src="classV.js"></script>
