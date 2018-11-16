@@ -16,25 +16,29 @@
        <h3 id = "time">Time: Y<span id = "year">0</span> M<span id = "month">0</span> D<span id = "day">0</span></h3>
     </div>
     <div class = "navigation">
-      <h4 id = "active">A</h4>
-      <h4>B</h4>
-      <h4>C</h4>
-      <h4>D</h4>
+      <button type = "button" onclick = "changeSelect(0)">A</button>
+      <button type = "button" onclick = "changeSelect(1)">B</button>
+      <button type = "button" onclick = "changeSelect(2)">C</button>
+      <button type = "button" onclick = "changeSelect(3)">D</button>
   </nav>
 </div>
   <div class = "main">
-    <div class = "venture">
-      <h1>Business A: Taquria Roland</h1>
-      <h2>Food Industry, lv 2</h2>
-      <p>
+    <div class = "venture" id = "ventureInfo">
+      <h1 id = "ventureName">Business A: Taquria Roland</h1>
+      <h2 id = "industryName">Food Industry, lv 2</h2>
+      <p id = "miscInfo">
         Current profit: <span id = "cp">0</span>/sec <br />
         Total profit: $<span id = "tp">0</span><br />
         Expenses: -$<span id="expenses">0</span><br />
       </p>
-      <h3>Upgrade</h3>
-      <p>
+      <button type = "button" onclick = "ventureUpgrade()"
+       id = "upgradeButton">UPGRADE</button>
+      <p id = "upgradeCostInfo">
         Upgrade cost: $<span id = "upgrade">0</span>
       </p>
+    </div>
+    <div id = "newVenture">
+
     </div>
     <script src="js/classI.js"></script>
     <script src="js/classV.js"></script>

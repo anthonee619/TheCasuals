@@ -75,6 +75,7 @@ class FoodService extends Industry {
         infoString.push(this.pps);
         infoString.push(this.level);
         infoString.push(this.upgradeCost);
+        infoString.push(this.cost);
         return infoString;
     }
 }
@@ -124,6 +125,7 @@ class Farmer extends Industry {
         infoString.push(this.pps);
         infoString.push(this.level);
         infoString.push(this.upgradeCost);
+        infoString.push(this.cost);
         return infoString;
     }
 }
@@ -173,6 +175,7 @@ class FoodCompany extends Industry {
         infoString.push(this.pps);
         infoString.push(this.level);
         infoString.push(this.upgradeCost);
+        infoString.push(this.cost);
         return infoString;
     }
 }
@@ -222,6 +225,7 @@ class Professional extends Industry {
         infoString.push(this.pps);
         infoString.push(this.level);
         infoString.push(this.upgradeCost);
+        infoString.push(this.cost);
         return infoString;
     }
 }
@@ -269,6 +273,7 @@ class Producer extends Industry {
         infoString.push(this.pps);
         infoString.push(this.level);
         infoString.push(this.upgradeCost);
+        infoString.push(this.cost);
         return infoString;
     }
 }
@@ -316,6 +321,7 @@ class Sports extends Industry {
         infoString.push(this.pps);
         infoString.push(this.level);
         infoString.push(this.upgradeCost);
+        infoString.push(this.cost);
         return infoString;
     }
 }
@@ -363,6 +369,7 @@ class Branding extends Industry {
         infoString.push(this.pps);
         infoString.push(this.level);
         infoString.push(this.upgradeCost);
+        infoString.push(this.cost);
         return infoString;
     }
 }
@@ -409,6 +416,7 @@ class Fame extends Industry {
         infoString.push(this.pps);
         infoString.push(this.level);
         infoString.push(this.upgradeCost);
+        infoString.push(this.cost);
         return infoString;
     }
 
@@ -457,6 +465,7 @@ class Franchise extends Industry {
         infoString.push(this.pps);
         infoString.push(this.level);
         infoString.push(this.upgradeCost);
+        infoString.push(this.cost);
         return infoString;
     }
     
